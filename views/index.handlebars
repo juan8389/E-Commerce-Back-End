@@ -1,0 +1,39 @@
+<div id="burgerDiv">
+  <img class="logo" src="/assets/images/burger.png" alt="My_Logo">
+
+  <h1>The Burgers!</h1>
+
+  <h2>Add a Burger</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="ca">Burger Order:</label>
+      <input type="text" id="ca" name="name">
+    </div>
+
+    <div class="form-group">
+      <input type="radio" name="devour" value="0"> New Order
+    </div>
+
+    <button type="submit">Add Burger</button>
+  </form>
+  <h2>NEW ORDERS!</h2>
+
+  <ul>
+    {{#each burgers}}
+    {{#unless devour}}
+    {{> burgers/burger-block devour=true}}
+    {{/unless}}
+    {{/each}}
+  </ul>
+
+  <h2>Devoured Burgers</h2>
+
+  <ul>
+    {{#each burgers}}
+    {{#if devour}}
+    {{> burgers/burger-block devour=false}}
+    {{/if}}
+    {{/each}}
+  </ul>
+</div>

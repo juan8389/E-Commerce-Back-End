@@ -1,0 +1,41 @@
+body{
+  background-color: coral;
+}
+#burgerDiv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: coral;
+}
+.logo{
+  height: 250px;
+  width: 25%;
+}
+button{
+  background-color: rgb(253, 165, 132);
+}
+li {
+  padding: 5px;
+  margin: 5px;
+  /* background: #d7f6fa; */
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+ul{
+  display: flex;
+  align-items: center;
+}
